@@ -1,0 +1,19 @@
+name: MEffectUI
+api: 5.0.0
+version: 1.0.0
+main: MagmaZ3637\Meffect\Main
+author: MagmaZ3637
+description: Add bunch of effect to a player. this plugin recomended use for rank feature
+
+commands:
+  meffectui:
+    description: §eOpen Effect UI
+    permission: meffect.use
+    aliases: ["meffect", "meui"]
+
+permissions:
+  meffect.use:
+    description: For UI
+    default: true
+  effect.regen:
+    default: op
