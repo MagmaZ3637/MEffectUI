@@ -50,7 +50,8 @@ class Main extends PluginBase implements Listener
                case 0:
                    # REGENERATION
                    if($player->hasPermission("effect.regen") or $player->hasPermission(DefaultPermissions::ROOT_OPERATOR)){
-                       $player->getServer()->dispatchCommand(new ConsoleCommandSender(Server::getInstance(), Server::getInstance()->getLanguage()),  str_replace('{player}', $player->getName(), "effect {player} regeneration 999999"));
+                       $player->getServer()->dispatchCommand(new ConsoleCommandSender(Server::getInstance(), Server::getInstance()->getLanguage()),  str_replace('{player}', $player->getName(), "effect {player} regeneration 999999 3"));
+                       $player->sendToastNotification($this->getConfig()->get("name-server"), $this->getConfig()->get("message-success"). " §eRegeneration");
                    } else {
                        $player->sendToastNotification($this->getConfig()->get("server-name"), $this->getConfig()->get("message-perm"));
                    }
