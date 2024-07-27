@@ -1,4 +1,7 @@
+---
 Title: "§aM§eEffectUI"
 Content: "config.yml"
 server-name: "§g( §aM§eEffectUI §g)"
+message-success: "§aSuccessfully Set"
 message-perm: "§cYou don't have permission"
+...
